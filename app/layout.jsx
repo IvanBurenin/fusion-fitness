@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer'
 import './normalize.css'
 import mainStyles from './main.module.css'
 
-const myFont = localFont({ src: './fusion-fitness/fonts/RS-semibold.otf' })
+const myFont = localFont({ src: './fusion-fitness/fonts/RS-semibold.otf', display: 'swap' })
 
 export const metadata = {
     title: 'FUSION',
@@ -15,11 +15,11 @@ export const metadata = {
 
 export default function RootLayout({children}){
     return (
-      <html style={{height: '100%'}}>
+      <html style={{height: '100%'}} className={myFont.className}>
         <body style={{minHeight: '100%', display: 'flex', flexDirection: 'column'}}>
           <div className={mainStyles.wrapper}>
               <Header/>
-              <main className={`${mainStyles.main} ${myFont.className}`}>
+              <main className={mainStyles.main}>
               {children}
               </main>
               <Footer/>
