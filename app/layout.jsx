@@ -9,10 +9,10 @@ import mainStyles from './main.module.css'
 const myFont = localFont({
   src: [
     {
-      path: './fusion-fitness/fonts/RS-semibold.otf'
+      path: '/fusion-fitness/fonts/RS-semibold.otf'
     },
     {
-      path: './fusion-fitness/fonts/BAHNSCHRIFT.TTF'
+      path: '/fusion-fitness/fonts/BAHNSCHRIFT.TTF'
     },
   ],
 })
