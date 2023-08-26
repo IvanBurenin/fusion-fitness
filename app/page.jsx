@@ -13,7 +13,7 @@ import 'swiper/css';
 export default function HomeFitness(){
     return(
         <>
-            <section style={{backgroundImage: `url("/fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
+            <section style={{backgroundImage: `url("./fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
                 <div className={styles.container}>
                     <div className={styles.topInner}>
                         <h1 className={styles.topTitle}>Фитнес-клуб в центре Екатеринбурга</h1>
@@ -121,7 +121,7 @@ export default function HomeFitness(){
                             <Link href='/card'>
                                 <button className={`${styles.cardBtn} ${styles.cardAdaptive}`}>Приобрести</button>
                             </Link>
-                            <img src="/fusion-fitness/home-images/card-img.jpg" alt="" />
+                            <img src="./fusion-fitness/home-images/card-img.jpg" alt="" />
                         </div>
                     </div>
                 </div>
