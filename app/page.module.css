@@ -1,0 +1,478 @@
+.marginBottom{
+    margin-bottom: 70px;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topInner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topTitle{
+    color: #00E39F;
+    font-family: RockStar;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.topSubtitle{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    max-width: 830px;
+    text-align: center;
+    color: #E9E9E9;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.topBtn{
+    cursor: pointer;
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #00E39F;
+    background-color: transparent;
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all .1s;
+}
+
+.topBtn:hover{
+    background-color: #ffffff;
+    border-color: transparent;
+    color: black;
+}
+
+.benefits{
+    margin-top: 35px;
+}
+
+.benefitsInner{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 40px;
+}
+
+.trainings{
+    margin-top: 180px;
+}
+
+.trainingsInner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainingsLeft{
+    width: 600px;
+}
+
+.accordionList{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.trainingsRight{
+    width: 528px;
+    height: 705px;
+    position: relative;
+}
+
+.trainingsRight img{
+    width: 528px;
+    height: 705px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.trainingsNonAdaptive{
+    display: block;
+}
+
+.trainingsAdaptive{
+    display: none;
+}
+
+.trainingsBtn{
+    padding: 10px 10px;
+    margin: 0 auto;
+    width: 220px;
+    height: fit-content;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    border: 2px solid #0CBA86;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Bahnschrift;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.trainingsBtn:hover{
+    background-color: #ffffff;
+    border-color: transparent;
+    color: black;
+}
+
+.gallery{
+    margin-top: 180px;
+    width: 100%;
+    position: relative;
+    height: 652px;
+}
+
+.galleryContainer{
+    height: 100%;
+}
+
+.gallery video{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallery::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.galleryInner{
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryBtn{
+    padding: 10px 10px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #0CBA86;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Bahnschrift;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.galleryBtn:hover{
+    background-color: #ffffff;
+    border-color: transparent;
+    color: black;
+}
+
+.bar{
+    margin-top: 180px;
+}
+
+.barBtn{
+    margin: 70px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid #0CBA86;
+    border-radius: 15px;
+    color: #202020;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.barBtn:hover{
+    margin: 70px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border: 2px solid #0CBA86;
+    border-radius: 15px;
+    color: #202020;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #0CBA86;
+    border-color: transparent;
+    color: white;
+}
+
+.card{
+    margin-top: 180px;
+    padding-bottom: 180px;
+}
+
+.cardInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLeft{
+    width: 588px;
+}
+
+.cardList{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    list-style-type: none;
+    counter-reset: custom-list;
+}
+
+.cardItem{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.cardItem::before{
+    content: counter(custom-list);
+    position: absolute;
+    counter-increment: custom-list;
+    background-color: #0CBA86;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cardItem p{
+    margin-left: 83px;
+}
+
+.cardBtn{
+    margin: 50px auto;
+    padding: 10px 10px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid #0CBA86;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Bahnschrift;
+    cursor: pointer;
+    transition: all .1s;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBtn:hover{
+    background-color: #0CBA86;
+    border-color: transparent;
+    color: white;
+}
+
+.cardRight{
+    display: flex;
+}
+
+.cardRight img{
+    width: 560px;
+    height: 361px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.cardNonAdaptive{
+    display: block;
+}
+
+.cardAdaptive{
+    display: none;
+}
+
+@media(max-width: 1250px){
+    .benefitsInner{
+        justify-content: space-around;
+    }
+    .trainingsInner{
+        flex-direction: column;
+    }
+    .trainingsLeft{
+        width: 100%;
+    }
+    .trainingsRight{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+    .trainingsRight img{
+        width: 100%;
+        height: 300px;
+    }
+    .trainingsAdaptive{
+        display: block;
+    }
+    .trainingsNonAdaptive{
+        display: none;
+    }
+    .trainingsBtn{
+        background-color: #0CBA86;
+        border: none;
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+    .cardInner{
+        flex-direction: column;
+    }
+    .cardLeft{
+        width: 100%;
+    }
+    .cardRight{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .cardBtn{
+        margin: 0 0;
+    }
+    .cardAdaptive{
+        display: block;
+    }
+    .cardNonAdaptive{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .topTitle{
+        font-size: 30px;
+    }
+    .topSubtitle{
+        font-size: 21px;
+    }
+    .topBtn{
+        width: 255px;
+        font-size: 22px;
+    }
+    .card{
+        padding-bottom: 280px;
+    }
+}
+
+@media (max-width: 950px){
+    .topTitle{
+        font-size: 30px;
+    }
+    .topSubtitle{
+        font-size: 21px;
+    }
+    .topBtn{
+        width: 255px;
+        font-size: 22px;
+    }
+    .card{
+        padding-bottom: 280px;
+    }
+    .cardRight img{
+        width: 450px;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 800px){
+    .accordionList{
+        gap: 25px;
+    }
+}
+
+@media(max-width: 880px){
+    .cardBtn{
+        width: 230px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 750px){
+    .topTitle{
+        font-size: 24px;
+    }
+    .topSubtitle{
+        font-size: 18px;
+    }
+    .topBtn{
+        width: 230px;
+        font-size: 20px;
+    }
+    .cardRight{
+        flex-direction: column;
+    }
+    .cardRight img{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .card{
+        padding-bottom: 500px;
+    }
+}
+
+@media (max-width: 400px){
+    .trainingsBtn{
+        width: 190px;
+        font-size: 22px;
+    }
+    .galleryInner a{
+        width: 80%;
+    }
+    .galleryBtn{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px){
+    .top{
+        padding-top: 50px;
+    }
+    .topBtn{
+        width: 100%;
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,70 @@
+.margin{
+    margin-bottom: 30px !important;
+}
+
+.fitBar{
+    margin-top: 160px;
+    margin-bottom: 300px;
+}
+
+.topSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postScruptuim{
+    max-width: 500px;
+    color: #B9B9B9;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.barItems{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100% / 4 - 20px));
+    gap: 25px 20px;
+}
+
+@media(max-width: 1250px){
+    .topSection{
+        flex-direction: column;
+        gap: 20px;
+        align-items: baseline;
+    }
+    .postScruptuim{
+        text-align: left;
+    }
+}
+
+@media(max-width: 1000px){
+    .barItems{
+        grid-template-columns: repeat(3, calc(100% / 3 - 20px));
+        justify-content: center;
+    }
+}
+
+@media(max-width: 750px){
+    .fitBar{
+        margin-bottom: 500px;
+    }
+    .barItems{
+        grid-template-columns: repeat(2, calc(100% / 2 - 20px));
+        justify-content: center;
+    }
+}
+
+@media(max-width: 500px){
+    .barItems{
+        grid-template-columns: repeat(1, calc(100% - 20px));
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px){
+    .fitBar{
+        margin-top: 120px;
+    }
+}

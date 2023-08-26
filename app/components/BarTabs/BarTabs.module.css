@@ -1,0 +1,35 @@
+.tabs{
+    display: flex;
+    max-width: 100%;
+    gap: 25px 60px;
+    align-items: center;
+    overflow: overlay;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.tabBtn{
+    padding: 10px;
+    color: #202020;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 130%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: color .1s;
+}
+
+.tabBtn:hover{
+    color: #0CBA86;
+}
+
+.tabBtnPassive{
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+.tabBtnActive{
+    border: 2px solid #0CBA86;
+    border-radius: 15px;
+}

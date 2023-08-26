@@ -1,0 +1,100 @@
+.footer{
+    padding: 25px 20px;
+    position: absolute;
+    width: 100%;
+    background-color: #292929;
+    bottom: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact{
+    display: flex;
+    gap: 10px;
+}
+
+.text{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 350;
+    transition: all .1s;
+}
+
+.text:hover{
+    color: #00E39F;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #00E39F;
+    font-family: Gantari;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+@media(max-width: 1000px){
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left{
+        gap: 15px;
+    }
+    .menu{
+        margin-top: 30px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 750px){
+    .menu{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 400px){
+    .left a{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        word-wrap: break-word;
+        font-size: 16px;
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width: 400px){
+    .footer{
+        padding: 25px 5px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .text{
+        word-wrap: break-word;
+        font-size: 16px;
+    }
+}

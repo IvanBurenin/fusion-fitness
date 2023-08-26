@@ -1,0 +1,33 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 15px 30px;
+}
+
+.btn{
+    padding: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: #202020;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 130%;
+    border: 0;
+    outline: 0;
+}
+
+.btn:hover{
+    color: #0CBA86;
+}
+
+.btnActive{
+    border: 2px solid #0CBA86;
+    border-radius: 15px;
+}
+
+.textSection{
+    margin-top: 20px;
+    max-width: 565px;
+}

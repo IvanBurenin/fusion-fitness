@@ -1,0 +1,124 @@
+.header{
+    margin-top: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    border-radius: 15px;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: #00E39F;
+    font-family: Gantari;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+.menu{
+    display: flex;
+    gap: 25px;
+}
+
+.menuItem a{
+    color: #E9E9E9;
+    font-size: 16px;
+    transition: all .1s;
+}
+
+.menuItem a:hover{
+    color: #00E39F;
+}
+
+.adaptiveRight{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.menuBtn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 25px;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+
+.menuActive .menu{
+    transform: translateY(0) !important;
+}
+
+.btnLine{
+    width: 100%;
+    background-color: #00E39F;
+    height: 2px;
+}
+
+.button{
+    padding: 10px 20px;
+    background-color: transparent;
+    font-family: Bahnschrift;
+    color: #E9E9E9;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 15px;
+    border: 2px solid #00E39F;
+    cursor: pointer;
+    transition: all .1s;
+    position: relative;
+}
+
+.button:hover{
+    background-color: #00E39F;
+    color: black;
+}
+
+@media (max-width: 1000px){
+    .menuBtn{
+        display: inline-flex;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        background-color: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-105%);;
+        transition: .3s ease;
+        height: 100vh;
+    }
+    .menuItem a{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .adaptiveRight{
+        gap: 0;
+    }
+    .button{
+        display: none;
+    }
+}

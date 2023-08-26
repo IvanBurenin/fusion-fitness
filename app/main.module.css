@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
+
+@font-face {
+    font-family: Bahnschrift;
+    src: url('/fusion-fitness/fonts/BAHNSCHRIFT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: RockStar;
+    src: url('/fusion-fitness/fonts/RS-semibold.OTF') format('truetype');
+}
+
+.wrapper{
+    flex: 1;
+    font-family: Bahnschrift;
+    color: #202020;
+    background-color: #F1F1F1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 350;
+    position: relative;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1215px;
+}
+
+.text{
+    line-height: 130%;
+}
+
+.title{
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.pagesTitle{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #202020;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media(max-width: 800px){
+    .title{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px){
+    .pagesTitle{
+        font-size: 28px;
+    }
+}

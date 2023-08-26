@@ -1,0 +1,61 @@
+.trainings{
+    margin-top: 160px;
+}
+
+.trainingsGrid{
+    display: flex;
+    column-gap: 21px;
+    overflow: overlay;
+    padding-bottom: 30px;
+}
+
+.trainingKinds{
+    margin-top: 80px;
+    margin-bottom: 300px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item{
+    padding: 25px;
+    color: #202020;
+    border-radius: 15px;
+    border: 2px solid #0cba86;
+}
+
+.kindTitle{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+@media (max-width: 1250px){
+    .trainingsGrid{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+}
+
+@media(max-width: 700px){
+    .trainingKinds{
+        margin-bottom: 500px;
+    }
+    .kindTitle{
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 400px){
+    .trainings{
+        margin-top: 120px;
+    }
+    .kindTitle{
+        font-size: 20px;
+    }
+}
