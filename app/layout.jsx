@@ -6,7 +6,16 @@ import Footer from './components/Footer/Footer'
 import './normalize.css'
 import mainStyles from './main.module.css'
 
-const myFont = localFont({ src: './fusion-fitness/fonts/RS-semibold.otf', display: 'swap' })
+const myFont = localFont({
+  src: [
+    {
+      path: './fonts/RS-semibold.otf',
+    },
+    {
+      path: './fonts/BAHNSCHRIFT.ttf',
+    },
+  ],
+})
 
 export const metadata = {
     title: 'FUSION',
