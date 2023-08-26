@@ -1,12 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import localFont from 'next/font/local'
 
 import MonthsItems from '../components/MonthsItem/MonthsItems'
 import RateList from '../components/RateList/RateList'
 
 import styles from './page.module.css'
 import mainStyles from '../main.module.css'
+
+const myFont = localFont({
+    src: '../fonts/RS-semibold.otf',
+    display: 'swap',
+})
 
 export default function Card() {
     const [months, setMonths] = useState(2000)
@@ -58,9 +64,9 @@ export default function Card() {
                 <div className={styles.modalDialog}>
                     <div className={styles.modalContent}>
                         <div className={styles.modalInner}>
-                            <h1 className={styles.modalTitle}>Спасибо за заказ!</h1>
+                            <h1 className={`${styles.modalTitle} ${myFont.className}`}>Спасибо за заказ!</h1>
                             <h3 className={styles.modalSubtitle}>Скоро мы с вами свяжемся</h3>
-                            <button onClick={closeModal} className={styles.modalBtn}>Вернуться</button>
+                            <button onClick={closeModal} className={`${styles.modalBtn} ${myFont.className}`}>Вернуться</button>
                         </div>
                     </div>
                 </div>
