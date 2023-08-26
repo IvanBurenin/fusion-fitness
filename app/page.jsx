@@ -127,7 +127,7 @@ export default function HomeFitness(){
                             <Link href='/card'>
                                 <button className={`${styles.cardBtn} ${styles.cardAdaptive}`}>Приобрести</button>
                             </Link>
-                            <img src="/fusion-fitness/home-images/card-img.jpg" alt="" />
+                            <img src="./fusion-fitness/home-images/card-img.jpg" alt="" />
                         </div>
                     </div>
                 </div>
