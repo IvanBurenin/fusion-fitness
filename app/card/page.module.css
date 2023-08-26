@@ -146,7 +146,6 @@
 
 .modalTitle{
     color: #00E39F;
-    font-family: RockStar;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 3px;
@@ -154,7 +153,6 @@
 
 .modalSubtitle{
     color: #00E39F;
-    font-family: RockStar;
     font-size: 24px;
     font-weight: 600;
 }
@@ -169,7 +167,6 @@
     transition: all .1s;
     cursor: pointer;
 
-    font-family: RockStar;
     color: #00E39F;
     font-size: 24px;
     font-weight: 600;
