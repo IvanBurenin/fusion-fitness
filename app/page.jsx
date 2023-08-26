@@ -51,7 +51,7 @@ export default function HomeFitness(){
                             </div>
                         </div>
                         <div className={styles.trainingsRight}>
-                            <img className={styles.trainingsNonAdaptive} src="/fusion-fitness/home-images/trainings-img.jpg" alt="" />
+                            <img className={styles.trainingsNonAdaptive} src="./fusion-fitness/home-images/trainings-img.jpg" alt="" />
                             <Link href='/schedule'>
                                 <button className={styles.trainingsBtn}>Тренировки</button>
                             </Link>
