@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: Bahnschrift;
-    src: url('public/fusion-fitness/fonts/BAHNSCHRIFT.TTF') format('truetype');
+    src: url('/fusion-fitness/fonts/BAHNSCHRIFT.TTF') format('truetype');
 }
 
 @font-face {
     font-family: RockStar;
-    src: url('public/fusion-fitness/fonts/RS-semibold.OTF') format('truetype');
+    src: url('/fusion-fitness/fonts/RS-semibold.OTF') format('truetype');
 }
 
 .wrapper{
