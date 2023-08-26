@@ -1,4 +1,5 @@
 import Link from "next/link";
+import localFont from 'next/font/local'
 
 import Benefit from './components/Benefit/Benefit'
 import TrainingAccordions from "./components/TrainingAccordions/TrainingAccordions";
@@ -10,13 +11,18 @@ import styles from './page.module.css'
 import mainStyles from './main.module.css'
 import 'swiper/css';
 
+const myFont = localFont({
+    src: './fonts/RS-semibold.otf',
+    display: 'swap',
+})
+
 export default function HomeFitness(){
     return(
         <>
-            <section style={{backgroundImage: `url("./fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
+            <section style={{backgroundImage: `url("/fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
                 <div className={styles.container}>
                     <div className={styles.topInner}>
-                        <h1 className={styles.topTitle}>Фитнес-клуб в центре Екатеринбурга</h1>
+                        <h1 className={`${styles.topTitle} ${myFont.className}`}>Фитнес-клуб в центре Екатеринбурга</h1>
                         <h2 className={styles.topSubtitle}>
                             Достигайте новых высот с нашими профессиональными тренерами и современным оборудованием
                         </h2>
@@ -51,7 +57,7 @@ export default function HomeFitness(){
                             </div>
                         </div>
                         <div className={styles.trainingsRight}>
-                            <img className={styles.trainingsNonAdaptive} src="./fusion-fitness/home-images/trainings-img.jpg" alt="" />
+                            <img className={styles.trainingsNonAdaptive} src="/fusion-fitness/home-images/trainings-img.jpg" alt="" />
                             <Link href='/schedule'>
                                 <button className={styles.trainingsBtn}>Тренировки</button>
                             </Link>
@@ -121,7 +127,7 @@ export default function HomeFitness(){
                             <Link href='/card'>
                                 <button className={`${styles.cardBtn} ${styles.cardAdaptive}`}>Приобрести</button>
                             </Link>
-                            <img src="./fusion-fitness/home-images/card-img.jpg" alt="" />
+                            <img src="/fusion-fitness/home-images/card-img.jpg" alt="" />
                         </div>
                     </div>
                 </div>
