@@ -19,7 +19,7 @@ const myFont = localFont({
 export default function HomeFitness(){
     return(
         <>
-            <section style={{backgroundImage: `url("/fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
+            <section style={{backgroundImage: `url("./fusion-fitness/home-images/top-bg.jpg")`}} className={styles.top}>
                 <div className={styles.container}>
                     <div className={styles.topInner}>
                         <h1 className={`${styles.topTitle} ${myFont.className}`}>Фитнес-клуб в центре Екатеринбурга</h1>
@@ -57,7 +57,7 @@ export default function HomeFitness(){
                             </div>
                         </div>
                         <div className={styles.trainingsRight}>
-                            <img className={styles.trainingsNonAdaptive} src="/fusion-fitness/home-images/trainings-img.jpg" alt="" />
+                            <img className={styles.trainingsNonAdaptive} src="./fusion-fitness/home-images/trainings-img.jpg" alt="" />
                             <Link href='/schedule'>
                                 <button className={styles.trainingsBtn}>Тренировки</button>
                             </Link>
