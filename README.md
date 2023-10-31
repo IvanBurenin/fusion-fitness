@@ -12,7 +12,7 @@ Welcome to the multi-page website of FUSION Fitness Club. My website offers a dy
 * Membership Purchase
 
 ## Powered by
-The website is built with NEXT.js, utilizing CSS modules. SwiperJs was employed for the carousels.
+The website is built with NEXT.js, utilizing CSS modules. SwiperJs was employed for the carousels
 
 ## Link
 ✅ https://ivanburenin.github.io/fusion-fitness/
